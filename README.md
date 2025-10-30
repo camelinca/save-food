@@ -1,12 +1,14 @@
 # 🍽️ SaveFood
 
 ## 🧩 Struktur Proyek
+
+```bash
 SaveFood/
 │
-├── CustomerSaveFood/ # Aplikasi Android (Kotlin) untuk pelanggan
-├── MerchantSaveFood/ # Aplikasi Android (Kotlin) untuk restoran/merchant
-└── SaveFoodFlask/ # API backend menggunakan Flask dan Firebase
-
+├── CustomerSaveFood/     # Aplikasi Android (Kotlin) untuk pelanggan
+├── MerchantSaveFood/     # Aplikasi Android (Kotlin) untuk restoran/merchant
+└── SaveFoodFlask/        # API backend menggunakan Flask dan Firebase
+```
 ---
 
 ## 🚀 Deskripsi Singkat
