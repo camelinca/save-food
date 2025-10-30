@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center_vertical"
+    tools:context=".RegisterActivity">
+
+    <!-- Logo Aplikasi -->
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Nama -->
+    <EditText
+        android:id="@+id/et_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewLogo"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Nama Kamu"
+        android:minHeight="48dp"
+        android:drawableLeft="@drawable/ic_nama"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/primary"
+        />
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_nama"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Email"
+        android:minHeight="48dp"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/primary"/>
+    <!-- Nomor Telepon -->
+    <EditText
+        android:id="@+id/et_nohp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_email"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Nomor HP"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:drawableLeft="@drawable/ic_phone"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/primary"/>
+    <!-- Password -->
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_nohp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/primary"/>
+    <EditText
+        android:id="@+id/et_konfirmpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Konfirmasi Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/primary" />
+
+    <!-- Tombol Register -->
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_below="@id/et_konfirmpassword"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_punyaakun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:minHeight="48dp"
+        android:onClick="punyaAkun"
+        android:text="Kamu sudah punya akun?"
+        android:textColor="@color/primary" />
+
+</RelativeLayout>

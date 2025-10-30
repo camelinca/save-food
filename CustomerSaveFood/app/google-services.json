@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "57045568693",
+    "firebase_url": "https://savefood-3ff05-default-rtdb.firebaseio.com",
+    "project_id": "savefood-3ff05",
+    "storage_bucket": "savefood-3ff05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57045568693:android:8ade9dd10ae568c49b82fc",
+        "android_client_info": {
+          "package_name": "com.example.cobaml"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1UiZlqTpcaO-5SdI--Lb6WgOKchS9ycE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57045568693:android:743bef558f841f359b82fc",
+        "android_client_info": {
+          "package_name": "com.example.customersavefood"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1UiZlqTpcaO-5SdI--Lb6WgOKchS9ycE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57045568693:android:ae8573a332dc91b69b82fc",
+        "android_client_info": {
+          "package_name": "com.example.savefoodreal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1UiZlqTpcaO-5SdI--Lb6WgOKchS9ycE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

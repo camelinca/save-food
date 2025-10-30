@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Eksplor"
+        android:id="@+id/eksplor"
+        android:icon="@drawable/ic_eksplor"/>
+    <item android:title="Pesanan"
+        android:id="@+id/pesanan"
+        android:icon="@drawable/ic_pesanan"/>
+    <item android:title="Koleksi"
+        android:id="@+id/koleksi"
+        android:icon="@drawable/ic_koleksi"/>
+    <item android:title="Profil"
+        android:id="@+id/profil"
+        android:icon="@drawable/ic_profil"/>
+</menu>

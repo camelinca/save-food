@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".EksplorFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@drawable/backgrounds"
+                app:layout_constraintTop_toTopOf="@id/all"
+                app:layout_constraintStart_toStartOf="@id/all">
+
+                <ImageButton
+                    android:id="@+id/btnKoleksi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/circle_white"
+                    android:contentDescription="Koleksi"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:src="@drawable/ic_cart"
+                    app:layout_constraintEnd_toEndOf="@id/header"
+                    app:layout_constraintTop_toTopOf="@id/header"
+                    app:tint="@color/primary" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/header3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/header"
+                app:layout_constraintStart_toStartOf="@id/header">
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                android:text="Selamat di Datang di SaveFood!"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/search_view_background"
+                app:layout_constraintTop_toBottomOf="@id/header"
+                app:layout_constraintBottom_toBottomOf="@id/header"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/judul1"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rekomendasi makanan untukmu"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listMenu"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:scrollbars="none"/>
+
+        <TextView
+            android:id="@+id/judul2"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restoran untukmu"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listRestoran"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:scrollbars="none"/>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

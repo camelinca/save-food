@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    tools:context=".ProfilFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        tools:context=".ProfilFragment">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profil Kamu"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                app:layout_constraintStart_toEndOf="@+id/btnBack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_foto"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/logo"
+                android:layout_gravity="start|top"/>
+
+            <!-- Layout Kanan (Nama, Email, No HP, Alamat) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_nama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Konsumen"
+                    android:textStyle="bold"
+                    android:textSize="24dp"/>
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email Kamu"/>
+
+                <TextView
+                    android:id="@+id/tv_noHP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="123456789"/>
+
+                <TextView
+                    android:id="@+id/tv_alamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:text="Jalan Hr.Subrantas "/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnEditProfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Profil Kamu"
+            android:layout_marginHorizontal="16dp"
+            android:layout_gravity="center_horizontal"/>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="6dp"
+                    android:textSize="16dp"
+                    android:text="Apa yang telah kamu lakukan?"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Penyelamatan yang kamu buat "
+                    />
+                    <TextView
+                        android:id="@+id/total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 10 makanan"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="16dp"
+            android:text="Keluar akun"
+            android:textColor="@color/primary"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+    </LinearLayout>
+</FrameLayout>
